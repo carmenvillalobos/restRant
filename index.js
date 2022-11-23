@@ -27,4 +27,4 @@ app.get('*', (req, res) => {
 app.listen(process.env.PORT)
 
 //Add the vercel configuration
-module.exports = app;
+// module.exports = app;
