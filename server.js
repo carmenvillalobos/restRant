@@ -4,8 +4,6 @@ const methodOverride = require('method-override')
 const express = require('express')
 const app = express()
 
-const PORT = process.env.PORT
-
 // Express Settings
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
@@ -26,8 +24,7 @@ app.get('*', (req, res) => {
 })
 
 // Listen for Connections
-app.listen(PORT, () => console.log(`Server is running in port ${PORT}`))
+app.listen(process.env.PORT)
 
-
-
+//Add the vercel configuration
 module.exports = app;
